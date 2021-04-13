@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 
 module.exports = {
-  entry: "./src/index",
+  entry: "./src/单例模式/模拟登陆",
   output: {
     path: __dirname,
     filename: "./release/bundle.js",
