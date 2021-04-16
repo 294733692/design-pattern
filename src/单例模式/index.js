@@ -17,9 +17,7 @@ SingleObject.getInstance = (function () {
   // 存储唯一实例
   let instance
   return function () {
-    if (!instance) {
-      instance = new SingleObject()
-    }
+    if (!instance) instance = new SingleObject()
     return instance
   }
 })()
