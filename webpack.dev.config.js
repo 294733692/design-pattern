@@ -1,7 +1,9 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+
+
 module.exports = {
-  entry: "./src/index",
+  entry: "./src/适配器模式/Adaptee",
   output: {
     path: __dirname,
     filename: "./release/bundle.js",
@@ -11,8 +13,8 @@ module.exports = {
       template: path.resolve(__dirname, "index.html"),
     }),
   ],
-  module:{
-    rules:[
+  module: {
+    rules: [
       {
         test: /.js$/,
         exclude: /node_modules/,
@@ -25,4 +27,4 @@ module.exports = {
     open: true, // 自动打开浏览器
     port: 8000, // 设置端口号
   },
-};
+}
